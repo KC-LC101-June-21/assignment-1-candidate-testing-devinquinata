@@ -3,24 +3,27 @@ const input = require('readline-sync');
 // TODO 2: modify your quiz app to ask 5 questions //
 
 // TODO 1.1a: Define candidateName // 
-let candidateName;
+
+let candidateName = "Devin";
+
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
-let question;
-let correctAnswer;
-let candidateAnswer;
-let questions;
-let correctAnswers;
-let candidateAnswers;
+
+let question = "What is 2 + 2?";
+let correctAnswer = 4;
+let candidateAnswer = 4;
+let correctAnswers = 4;
 
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
 
+let questions = (input.question("Enter Name: "))
 }
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
 
+let candidateAnswer = (input.question(question))
 
 }
 
@@ -28,8 +31,14 @@ function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 
+if (candidateAnswer = 4) {
+  console.log("That is correct!");
 
-  let grade;
+} else {
+  console.log("That is incorrect.");
+}
+
+  let grade = candidateAnswer / correctAnswer ;
   
 
   return grade;
