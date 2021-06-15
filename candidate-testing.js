@@ -40,7 +40,7 @@ function gradeQuiz(candidateAnswers) {
 
   let score = 0
 
-  console.log(`Candidate Name: ${candidateName}`)
+  console.log(`Candidate Name: ${Name}`)
   for(let i = 0; i < questions.length ; i++){
     console.log(`${i+1}) ${questions[i]}`)
     console.log(`Your answer: ${candidateAnswers[i]}`)
